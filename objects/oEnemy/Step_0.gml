@@ -24,11 +24,14 @@ if(place_meeting(x+hsp,y,oWall)){
 		
 		}
 		
-		
+	
 	hsp = 0;
+	
 }
 
+if((!place_empty(x+(sprite_width*sign(hsp)),y+1))){
 x = x+hsp;
+}
 
 }else{
 hsp = sign(x-other.x)*1;
