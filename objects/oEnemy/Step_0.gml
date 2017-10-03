@@ -3,10 +3,16 @@
 vsp = vsp+grv;
 
 
-		hsp = -sign(distance_to_object(oPlayer))*1;
+		hsp = sign(oPlayer.x-x)*1;
+		
+		if(distance_to_object(oPlayer)<200){
+		chessEnemy = true;
+		}else if(distance_to_object(oPlayer)<400){
+		chessEnemy = false;
+		}
 //Horizontal 
 
-if(!place_meeting(x+sign(hsp),y,oPlayer)){
+if(!place_meeting(x+sign(hsp),y,oPlayer)&&chessEnemy){
 			
 			//show_message("hi");
 if(place_meeting(x+hsp,y,oWall)){
@@ -25,7 +31,7 @@ if(place_meeting(x+hsp,y,oWall)){
 x = x+hsp;
 
 }else{
-hsp = 0;
+hsp = sign(x-other.x)*1;
 }
 
 
