@@ -1,28 +1,18 @@
 {
-    "id": "a6edcd31-2053-4923-9e21-528eb3c280d3",
+    "id": "f2421277-6a90-412d-a5e9-d936746e3a52",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oEnemy",
+    "name": "oLift",
     "eventList": [
         {
-            "id": "e3a8ea60-edc1-45e8-ac10-8c6332a0a5db",
+            "id": "91c41bb5-0eb9-49b0-a244-33a2ce7d192d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "a6edcd31-2053-4923-9e21-528eb3c280d3"
-        },
-        {
-            "id": "a72d0507-91f7-4e12-8601-24b7e470b2c3",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "a6edcd31-2053-4923-9e21-528eb3c280d3"
+            "m_owner": "f2421277-6a90-412d-a5e9-d936746e3a52"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -42,7 +32,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
-    "solid": true,
-    "spriteId": "cd88a646-7e0f-4f81-af46-202fe67311e0",
+    "solid": false,
+    "spriteId": "aea6e185-12fc-4c1a-acc2-0a449091c1d1",
     "visible": true
 }
