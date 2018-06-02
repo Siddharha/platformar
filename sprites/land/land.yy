@@ -13,7 +13,6 @@
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
-    "edgeFiltering": false,
     "frames": [
         {
             "id": "47cb44e6-f26a-4700-b8c3-fd30eaaf8da8",
@@ -55,7 +54,6 @@
         }
     ],
     "origin": 9,
-    "originLocked": false,
     "playbackSpeed": 10,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
@@ -65,6 +63,6 @@
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
     "width": 200,
-    "xorig": 180,
-    "yorig": 132
+    "xorig": -83,
+    "yorig": 1513
 }

@@ -8,14 +8,11 @@ key_jump = keyboard_check_pressed(vk_space);
 
 //Calculate Movement
 var move = key_right-key_left;			//Get Direction for key..
-
 hsp = move*walksp;
-	
 vsp = vsp+grv;
-
-
+isInLand = false;
 //Jump
-if(place_meeting(x,y+1,oWall)||place_meeting(x,y+1,oLift)){
+if(place_meeting(x,y+1,oWall)){
 
 if(key_jump){
 	vsp = -7;
@@ -26,8 +23,6 @@ if(key_jump){
 	isInLand = true;
 }
 
-
-
 //Horizontal Collision
 if(place_meeting(x+hsp,y,oWall)){
 		
@@ -36,22 +31,17 @@ if(place_meeting(x+hsp,y,oWall)){
 		}
 	hsp = 0;
 	
-}else{
+}
 
 x = x+hsp;
-
-}
 
 //Virtical Collision
 if(place_meeting(x,y+vsp,oWall)){
 		
 		while(!place_meeting(x,y+sign(vsp),oWall)){
 			y=y+sign(vsp);
-		
 		}
 	vsp = 0;
-	
-	
 	
 }
 
@@ -80,21 +70,3 @@ if(!key_jump){
 	}
 }
 
-
-if(place_meeting(x,y+vsp,oLift)){
-		
-	while(!place_meeting(x,y+sign(vsp),oLift)){
-			y=y+sign(vsp);
-			//y = oLift.y-sprite_height;
-		}
-	vsp = 0;
-	y = oLift.y-(sprite_height/2)-(oLift.sprite_height/2)
-	
-
-}
-
-if(y>room_height+sprite_height){
-	x = 81
-	y =911
-	image_xscale = 1
-}
